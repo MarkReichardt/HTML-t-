@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .input-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .input-container input,
+        .input-container select,
+        .input-container button {
+            margin: 0;
+            padding: 0;
+            max-width: 300px; 
+        }
+        #myProgress {
+            width: 100%;
+            background-color: #ddd;
+        }
+        #myBar {
+            width: 66%; 
+            height: 30px;
+            background-color: #4CAF50;
+        }
+    </style>
+    <script>
+        function msg1() {
+            alert('Sisse logitud');
+        }
+        function msg2() {
+            alert('Konto loodud');
+        }
+    </script>
+    <div id="fb-root"></div>
+    <title>Vorm</title>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0" nonce="XYN6ZPFu"></script>
+
+    <div id="myProgress">
+        <div id="myBar"></div>
+    </div>
+    <div class="hero"><h1>Domeeni registreerimine</h1></div>
+    <div class="hero2"><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Jätka sisse logimisega</button></div>
+    <div id="demo" class="collapse">
+        <input type="text" class="form-control" placeholder="E-mail" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <input type="text" class="form-control" placeholder="Parool" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <input type="button" value="Logi sisse" onclick="msg1()">
+        <h2>Või logi sisse kasutades:</h2>
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        <div class="fb-login-button" data-width="200" data-size="" data-button-type="" data-layout="" data-auto-logout-link="false" data-use-continue-as="false"></div>
+       </div>
+
+
+    <div class="hero3"><button type="button" class="btn btn-info2" data-toggle="collapse" data-target="#demo2">Loo uus konto</button>
+    <div id="demo2" class="collapse">
+        <input type="text" class="form-control" placeholder="E-mail" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <input type="text" class="form-control" placeholder="Parool" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <input type="text" class="form-control" placeholder="Kontrolli parooli" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <input type="button" value="Loo konto" onclick="msg2()">
+        <h2>Või loo konto kasutades:</h2>
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        <div class="fb-login-button" data-width="200" data-size="" data-button-type="" data-layout="" data-auto-logout-link="false" data-use-continue-as="false"></div>
+       </div>
+       </div>
+
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+    <p><a href="vorm1.html">Tagasi</a><br />
+    <p><a href="vorm3.html">Jätka</a><br />
+</body>

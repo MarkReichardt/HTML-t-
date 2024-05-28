@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vorm</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .input-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .input-container input,
+        .input-container select,
+        .input-container button {
+            margin: 0;
+            padding: 0;
+        }
+        #myProgress {
+            width: 100%;
+            background-color: #ddd;
+        }
+        #myBar {
+            width: 33%;
+            height: 30px;
+            background-color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <div id="myProgress">
+        <div id="myBar"></div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="70"
+        aria-valuemin="0" aria-valuemax="100" style="width:70%">
+        </div>
+    </div>
+    <div class="2">
+        <h1>Registreerige domeen</h1>
+        <p>Domeeni hind alates 7.66€ aastas</p>
+    </div>
+    <div class="input-container">
+        <input type="text" id="fname" name="fname" placeholder="Sisestage domeen">
+        <select id="dropdown" name="dropdown">
+            <option value=".com">.com</option>
+            <option value=".ee">.ee</option>
+            <option value=".uk">.uk</option>
+            <option value=".ru">.ru</option>
+            <option value=".us">.us</option>
+        </select>
+        <button type="button">Kontrolli saadavust</button>
+    </div>
+    <button type="button">Lisa domeen</button><br>
+    <p><a href="vorm2.html">Jätka</a><br />
+</body>
+</html>
